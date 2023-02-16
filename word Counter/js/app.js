@@ -12,4 +12,9 @@ function count() {
     document.getElementById('char').innerHTML = charLength
 
     document.getElementById('text').value = removeChar.toUpperCase()
+    if(newWord < 5 && charLength < 5){
+        document.getElementById('word').style.color = 'red'
+    }else{
+        document.getElementById('word').style.color = 'white'
+    }
 }
